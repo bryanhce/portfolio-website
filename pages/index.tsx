@@ -4,9 +4,7 @@ import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import Skills from "../components/Skills";
-import WorkExperience from "../components/WorkExperience";
-import { SocialIcon } from "react-social-icons";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -31,31 +29,13 @@ export default function Home() {
 
       <section id="projects" className="snap-center">
         <Projects />
-        {/* previously was WorkExperience for the slider */}
       </section>
-
-      {/* <section id="skills" className="snap-start">
-        <Skills />
-      </section> */}
 
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
 
-      <footer className="sticky bottom-5 w-full cursor-pointer">
-        <div className="flex items-center justify-cecnter">
-          <SocialIcon
-            url="https://www.linkedin.com/in/bryan-ho-7271b91b4/"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <SocialIcon
-            url="https://github.com/bryanhce"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

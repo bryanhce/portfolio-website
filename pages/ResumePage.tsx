@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Section from "../components/ResumeComponents/Section";
+import Footer from "../components/Footer";
 
 const work = [
   { title: "GovTech, Software Engineer Intern", date: "Aug 2024 - Jan 20245" },
@@ -27,7 +28,7 @@ const education = [
     date: "Aug 2021 - May 2025",
   },
   {
-    title: "University of North Carolina (UNC)",
+    title: "University of North Carolina, Chapel Hill (UNC)",
     desc: "Bachelor of Computer Science",
     desc2: "Student Exchange Programme (SEP)",
     date: "Aug 2023 - Dec 2023",
@@ -38,7 +39,7 @@ const education = [
     date: "Aug 2021 - May 2023",
   },
   {
-    title: "Victoria Junior College",
+    title: "Victoria Junior College (VJC)",
     desc: "Biology, Chemistry, Mathematics, Economics",
     date: "Jan 2017 - Dec 2018",
   },
@@ -88,18 +89,20 @@ const ResumePage = () => {
     <div
       className="bg-gray-700 text-white h-screen 
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8185E1]"
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8185E1]
+        text-center"
     >
       <Header />
       <div className="flex-col">
-        <text className="text-4xl ml-10 mb-5">
+        <text className="text-4xl mb-5">
           A longer history of my experiences
         </text>
         <Section content={work} title={"Career History"} />
         <Section content={education} title={"Education"} />
-        <Section content={leadership} title={"Leadership Experience"} />
-        <Section content={volunteering} title={"Volunteering Experience"} />
+        <Section content={leadership} title={"Leadership Experiences"} />
+        <Section content={volunteering} title={"Volunteering Experiences"} />
       </div>
+      <Footer />
     </div>
   );
 };

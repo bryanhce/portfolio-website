@@ -8,7 +8,7 @@ type Props = {
 const ResumeTitle = ({ text, onClick }: Props) => {
   return (
     <text
-      className="text-3xl ml-12 cursor-pointer
+      className="text-3xl cursor-pointer
        text-[#8185E1] hover:underline font-bold"
       onClick={onClick}
     >

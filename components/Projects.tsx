@@ -40,27 +40,6 @@ function Projects({}: Props) {
           View All Projects
         </button>
       </div>
-
-      {/* <motion.div
-        initial={{
-          x: 200,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-64 rounded-full object-cover
-        md:rounded-lg md:w-50 md:h-80 xl:w-[450px] xl:h-[600px] relative
-        mt-20"
-      >
-        <Image
-          src={CCImage}
-          alt="about me image"
-          className="w-500 h-500 rounded-full"
-        />
-      </motion.div> */}
     </motion.div>
   );
 }
