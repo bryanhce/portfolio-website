@@ -1,4 +1,5 @@
 import React from "react";
+import { Tooltip } from "@chakra-ui/react";
 
 type Props = {
   text?: string;
@@ -7,13 +8,22 @@ type Props = {
 
 const ResumeTitle = ({ text, onClick }: Props) => {
   return (
-    <text
-      className="text-3xl cursor-pointer
-       text-[#8185E1] hover:underline font-bold"
-      onClick={onClick}
+    <Tooltip
+      label="Click to shorten or lengthen this section"
+      aria-label="A tooltip"
+      placement="right"
+      bg="#E17FB3"
+      color="black"
+      hasArrow
     >
-      {text}
-    </text>
+      <text
+        className="text-3xl cursor-pointer
+       text-[#8185E1] hover:text-[#8185E1]/90 font-bold"
+        onClick={onClick}
+      >
+        {text}
+      </text>
+    </Tooltip>
   );
 };
 

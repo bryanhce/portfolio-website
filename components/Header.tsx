@@ -34,15 +34,9 @@ export default function Header({}: Props) {
           <Link href="/#about">
             <button className="heroButton border-none">About</button>
           </Link>
-          <Link href="/#projects">
+          <Link href="/ProjectPage">
             <button className="heroButton border-none">Projects</button>
           </Link>
-          {/* <Link href="#skills">
-            <button className="heroButton border-none">Skills</button>
-          </Link> */}
-          {/* <Link href="#experience">
-            <button className="heroButton border-none">Experience</button>
-          </Link> */}
           <Link href="/ResumePage">
             <button className="heroButton border-none">Resume</button>
           </Link>
@@ -65,7 +59,7 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer pt-1"
       >
-        <Link href="#contact">
+        <Link href="/#contact">
           <button className="heroButton border-none">Connect</button>
         </Link>
       </motion.div>

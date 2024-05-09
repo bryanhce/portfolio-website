@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Banner from "./Banner";
+import Link from "next/link";
 
 type Props = {};
 
@@ -37,7 +38,7 @@ function Projects({}: Props) {
           ideas to life through software engineering.
         </p>
         <button className="bg-[#8185E1] py-5 px-10 rounded-md text-black font-bold text-lg">
-          View All Projects
+          <Link href="/ProjectPage">View All Projects</Link>
         </button>
       </div>
     </motion.div>
