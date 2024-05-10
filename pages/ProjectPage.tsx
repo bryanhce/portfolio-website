@@ -109,7 +109,7 @@ const contents = [
   },
   {
     title: "nbwu",
-    desc: "Under the mentorship of NUS Social Impact Catalyst, nbwu helps raise funds for vaious charities in Singapore. We started during Circuit Breaker and have continued to gain momentum since, organising workshops and virtual marathons to raise funds.",
+    desc: "Under the mentorship of NUS Social Impact Catalyst, nbwu helps raise funds for vaious charities in Singapore. We started during Circuit Breaker and have continued to gain momentum since, organising workshops for people with cerebal palsy and virtual marathons fundraiser for migrant workers. FYI, it's pronounced as 'And Be With You'!",
     learningAreas:
       "Building a non-tech startup, organising fundraisers, curating virtual marathons",
     githubLink: "https://www.instagram.com/nbwu.sg/",
