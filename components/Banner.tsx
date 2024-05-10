@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import CCImage from "../images/CC.png";
-import guestBookImage from "../images/guest_book.png";
+import noisyBirdImage from "../images/NoisyBird.png";
+import rubiSlicesImage from "../images/RubiSlices.png";
 import nbwuImage from "../images/nbwu-icon.jpeg";
 import sgFoodImage from "../images/sgFoodPicker.png";
 import strikerImage from "../images/striker-icon.jpeg";
@@ -16,7 +17,8 @@ const Banner = () => {
     nbwuImage,
     sgFoodImage,
     strikerImage,
-    guestBookImage,
+    noisyBirdImage,
+    rubiSlicesImage,
   ].map((image, id) => ({
     id,
     image,

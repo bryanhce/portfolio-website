@@ -58,7 +58,7 @@ export default function About({}: Props) {
           <span className="text-purple-300 decoration-[#8185E1]/50">
             {" "}
             Web Development and Database Management
-          </span>{" "}
+          </span>
           . Marrying my two interests, my dream is to build
           <span className="text-purple-300 decoration-[#8185E1]/50">
             {" "}

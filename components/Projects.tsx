@@ -22,13 +22,13 @@ function Projects({}: Props) {
         <br />
         <Banner />
         <h4 className="text-4xl font-semibold">
-          Building things have always been a{" "}
+          Building has always been a{" "}
           <span className="underline decoration-[#8185E1]/50">passion</span>{" "}
           mine
         </h4>
         <p className="text-base w-1/4">
-          Exploring different projects throughout the year has been an enriching
-          journey for me. From{" "}
+          Exploring different projects throughout the years have been an
+          enriching journey for me. From{" "}
           <span className="text-purple-300 decoration-[#8185E1]/50">
             web development to mobile applications
           </span>

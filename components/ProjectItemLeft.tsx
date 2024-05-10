@@ -27,13 +27,19 @@ const ProjectItemLeft = ({ content }: Props) => {
       <Stack>
         <h4 className="text-4xl font-semibold">{content.title}</h4>
         <Text className="py-5 text-base text-left">{content.desc}</Text>
+        <Text className="pb-5 text-base text-left">
+          <span className="font-bold">Areas of growth: </span>
+          {content.learningAreas}
+        </Text>{" "}
         <div className="w-15 text-right">
           {content.githubLink && (
             <button
               className="bg-[#8185E1] py-3 px-5 mr-5
               rounded-md text-black font-bold text-lg "
             >
-              <Link href={content.githubLink}>Learn More</Link>
+              <Link href={content.githubLink} target="_blank">
+                Learn More
+              </Link>
             </button>
           )}
           {content.demoLink && (
@@ -41,7 +47,9 @@ const ProjectItemLeft = ({ content }: Props) => {
               className="bg-[#E17FB3] py-3 px-5 
               rounded-md text-black font-bold text-lg "
             >
-              <Link href={content.githubLink}>Demo</Link>
+              <Link href={content.demoLink} target="_blank">
+                Demo
+              </Link>
             </button>
           )}
         </div>
