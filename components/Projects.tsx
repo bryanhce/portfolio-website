@@ -33,9 +33,9 @@ function Projects({}: Props) {
             web development to mobile applications
           </span>
           , each project has been a learning opportunity that has fueled my
-          passion for creating and problem-solving in the digital space. I'm
-          grateful for the chance to contribute to meaningful projects and bring
-          ideas to life through software engineering.
+          passion for creating and problem-solving in the digital space.
+          I&apos;m grateful for the chance to contribute to meaningful projects
+          and bring ideas to life through software engineering.
         </p>
         <button className="bg-[#8185E1] py-5 px-10 rounded-md text-black font-bold text-lg">
           <Link href="/ProjectPage">View All Projects</Link>
