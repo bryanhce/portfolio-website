@@ -3,13 +3,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  isMainPage: boolean;
+};
 
-export default function Header({}: Props) {
+export default function Header({ isMainPage }: Props) {
   return (
     <header
-      className="sticky top-1 p-5 flex items-start justify-between max-w-7xl mx-auto
-    z-20 xl:items-center"
+      className={`${
+        isMainPage ? "sticky" : ""
+      } top-1 p-5 flex items-start justify-between max-w-7xl mx-auto
+    z-20 xl:items-center`}
     >
       <motion.div
         initial={{
@@ -31,11 +35,11 @@ export default function Header({}: Props) {
           <Link href="/">
             <button className="heroButton border-none">Home</button>
           </Link>
-          <Link href="/#about">
-            <button className="heroButton border-none">About</button>
-          </Link>
           <Link href="/ProjectPage">
             <button className="heroButton border-none">Projects</button>
+          </Link>
+          <Link href="/#about">
+            <button className="heroButton border-none">About</button>
           </Link>
           <Link href="/ResumePage">
             <button className="heroButton border-none">Resume</button>

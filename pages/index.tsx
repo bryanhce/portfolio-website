@@ -17,18 +17,18 @@ export default function Home() {
         <title>bryanhce</title>
       </Head>
 
-      <Header />
+      <Header isMainPage={true} />
 
       <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
-        <About />
-      </section>
-
       <section id="projects" className="snap-center">
         <Projects />
+      </section>
+
+      <section id="about" className="snap-center">
+        <About />
       </section>
 
       <section id="contact" className="snap-start">
