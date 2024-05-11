@@ -38,7 +38,7 @@ export default function Header({ isMainPage }: Props) {
           <Link href="/ProjectPage">
             <button className="heroButton border-none">Projects</button>
           </Link>
-          <Link href="/#about">
+          <Link href="/#about" className="hidden md:inline">
             <button className="heroButton border-none">About</button>
           </Link>
           <Link href="/ResumePage">

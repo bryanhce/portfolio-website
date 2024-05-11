@@ -20,7 +20,7 @@ const ProjectItemLeft = ({ content }: Props) => {
   return (
     <div className="flex flex-row max-w-7xl px-10 pt-12 pb-3 justify-evenly mx-auto items-center">
       <Image
-        className="relative h-80 w-70 px-10 object-contain"
+        className="relative h-80 w-70 px-10 object-contain hidden md:inline"
         src={content.image}
         alt={`${content.title} image`}
       />

@@ -26,7 +26,7 @@ function Projects({}: Props) {
           <span className="underline decoration-[#8185E1]/50">passion</span>{" "}
           mine
         </h4>
-        <p className="text-base w-1/4">
+        <p className="text-base md:w-1/4">
           Exploring different projects throughout the years have been an
           enriching journey for me. From{" "}
           <span className="text-purple-300 decoration-[#8185E1]/50">

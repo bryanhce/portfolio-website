@@ -50,7 +50,7 @@ const ProjectItemRight = ({ content }: Props) => {
         </div>
       </Stack>
       <Image
-        className="relative h-80 w-70 px-10 object-contain"
+        className="relative h-80 w-70 px-10 object-contain hidden md:inline"
         src={content.image}
         alt={`${content.title} image`}
       />

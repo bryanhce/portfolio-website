@@ -27,9 +27,9 @@ const Banner = () => {
   const ImageBanner = ({ images }: Props) => {
     return (
       <ul
-        className="flex items-center justify-center 
-      md:justify-start [&_li]:mx-5 [&_img]:max-w-none
-       animate-infinite-scroll"
+        className="md:flex md:items-center md:justify-center 
+      md:justify-start md:[&_li]:mx-5 md:[&_img]:max-w-none
+       md:animate-infinite-scroll hidden"
       >
         {images.map((i) => (
           <li key={i.id}>

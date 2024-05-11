@@ -18,7 +18,7 @@ const Section = ({ content, title }: Props) => {
         {content.map((c) => (
           <>
             {c.titleLink ? (
-              <Text className="text-2xl">
+              <Text className="text-lg md:text-2xl">
                 <Link
                   href={c.titleLink}
                   className="cursor-pointer hover:underline hover:text-[#8185E1]"
@@ -29,7 +29,7 @@ const Section = ({ content, title }: Props) => {
                 {", " + c.title.split(",")[1]}
               </Text>
             ) : (
-              <Text className="text-2xl">{c.title}</Text>
+              <Text className="text-lg md:text-2xl">{c.title}</Text>
             )}
 
             <Text className="text-m text-[#E17FB3]">{c.desc}</Text>
