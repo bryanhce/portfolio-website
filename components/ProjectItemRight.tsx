@@ -33,7 +33,7 @@ const ProjectItemRight = ({ content }: Props) => {
               rounded-md text-black font-bold text-lg "
             >
               <Link href={content.githubLink} target="_blank">
-                Learn More
+                Github
               </Link>
             </button>
           )}
