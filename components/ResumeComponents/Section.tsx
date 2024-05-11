@@ -13,7 +13,7 @@ const Section = ({ content, title }: Props) => {
 
   return (
     <div className="mt-7">
-      <ResumeTitle text={title} onClick={onToggle} />
+      <ResumeTitle text={title} onClick={onToggle} isOpen={isOpen} />
       <Collapse className="mt-4" in={!isOpen} animateOpacity>
         {content.map((c) => (
           <>
