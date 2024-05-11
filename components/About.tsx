@@ -36,7 +36,7 @@ export default function About({}: Props) {
         <Image
           src={aboutImage}
           alt="about me image"
-          className="w-500 h-500 rounded-full"
+          className="w-500 h-500 rounded-full hidden md:inline"
         />
       </motion.div>
 
