@@ -94,7 +94,7 @@ const contents = [
     title: "SG Food Picker",
     desc: "This telegram bot is for the fickle minded who can't decide what to eat. Filter restaurants based on your preferences and receive recommendations from a repository of restaurants I have personally tried!",
     learningAreas: "Python, Pandas, creating telegram bots, webhooks",
-    githubLink: "https://github.com/bryanhce/telebot-sgrestaurant",
+    githubLink: "",
     demoLink: "https://t.me/sgfoodpickerbot",
     image: sgFoodPickerImage,
   },
