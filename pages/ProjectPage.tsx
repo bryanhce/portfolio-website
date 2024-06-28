@@ -84,7 +84,7 @@ const contents = [
   },
   {
     title: "iPain",
-    desc: "iPain is a flash card application, modelled after Anki using Python's TkInter GUI, that monitors head and eye movements to measure user's attention with Computer Vision. If the user, looks away from the screen while doing work, an flash card with question will appear. Answer it wrongly and a seemly unremoable meme will appear, blocking your screen. Clear it by answering the next question correctly or face the consequences of the memes doubling! Submitted for the most annoying hack!",
+    desc: "iPain is a flash card application, modelled after Anki using Python's TkInter GUI, that monitors head and eye movements to measure user's attention with Computer Vision. If the user, looks away from the screen while doing work, an flash card with question will appear. Answer it wrongly and a seemly unremovable meme will appear, blocking your screen. Clear it by answering the next question correctly or face the consequences of the memes doubling! Submitted for the most annoying hack!",
     learningAreas: "OpenCV, Tkinter for building GUI with Python",
     githubLink: "https://github.com/bryanhce/hacknroll-tembu21",
     demoLink: "https://www.youtube.com/watch?v=WMx7lD9ydGk",
