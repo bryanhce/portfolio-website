@@ -19,6 +19,7 @@ export default function About({}: Props) {
         About
       </h3>
 
+      {/* <div className="flex-row items-center justify-center"> */}
       <motion.div
         initial={{
           x: -200,
@@ -32,12 +33,12 @@ export default function About({}: Props) {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-50 rounded-full object-cover
         md:rounded-lg md:w-50 md:h-80 xl:w-[450px] xl:h-[600px] relative"
       >
-        {/* TODO: change image */}
-        <Image
-          src={aboutImage}
-          alt="about me image"
-          className="w-500 h-500 rounded-full hidden md:inline"
-        />
+        <iframe
+          src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
+          width="100%"
+          height="100%"
+          className="md:inline"
+        ></iframe>
       </motion.div>
 
       <div className="space-y-10 px-0 md:px-10">
@@ -67,6 +68,7 @@ export default function About({}: Props) {
           that changes the world.
         </p>
       </div>
+      {/* </div> */}
     </motion.div>
   );
 }
