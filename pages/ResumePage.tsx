@@ -8,7 +8,7 @@ const work = [
   {
     title: "GovTech, Software Engineer Intern",
     titleLink: "https://www.tech.gov.sg/",
-    date: "Aug 2024 - Jan 20245",
+    date: "Aug 2024 - Jan 2025",
   },
   {
     title: "MSD, Cloud Engineer Intern",
