@@ -27,7 +27,7 @@ const Banner = () => {
   const ImageBanner = ({ images }: Props) => {
     return (
       <ul
-        className="md:flex md:items-center md:justify-center 
+        className="md:flex md:items-center 
       md:justify-start md:[&_li]:mx-5 md:[&_img]:max-w-none
        md:animate-infinite-scroll hidden"
       >

@@ -18,6 +18,9 @@ function ContactMe({}: Props) {
     window.location.href = `mailto:ho.cheng.en.bryan@gmail.com?subject=${formData.subject}&body=Hello, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
 
+  const messagePlaceholder =
+    "Dear Bryan, \n\nI will catch a grenade for you. \n\nBest, \nBruno Mars";
+
   return (
     <div
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row
@@ -41,13 +44,13 @@ function ContactMe({}: Props) {
           <div className="md:flex md:space-x-2 space-y-2 md:space-y-0">
             <input
               {...register("name")}
-              placeholder="Name"
+              placeholder="Name: Bruno Mars"
               className="contactInput"
               type="text"
             />
             <input
               {...register("email")}
-              placeholder="Email"
+              placeholder="Email: bruno@gmail.com"
               className="contactInput"
               type="email"
             />
@@ -55,15 +58,15 @@ function ContactMe({}: Props) {
 
           <input
             {...register("subject")}
-            placeholder="Subject"
+            placeholder="Subject: Request to perform at your birthday"
             className="contactInput"
             type="text"
           />
 
           <textarea
             {...register("message")}
-            placeholder="Message"
-            className="contactInput"
+            placeholder={messagePlaceholder}
+            className="contactInput h-44"
           />
           <button
             type="submit"

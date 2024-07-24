@@ -37,7 +37,7 @@ export default function About({}: Props) {
           src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
           width="100%"
           height="100%"
-          className="md:inline"
+          className="hidden md:inline"
         ></iframe>
       </motion.div>
 
