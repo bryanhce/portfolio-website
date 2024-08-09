@@ -37,7 +37,10 @@ function Projects({}: Props) {
           I&apos;m grateful for the chance to contribute to meaningful projects
           and bring ideas to life through software engineering.
         </p>
-        <button className="bg-[#8185E1] py-5 px-10 rounded-md text-black font-bold text-lg">
+        <button
+          className="bg-[#8185E1] hover:bg-[#9299ff] shadow-lg
+            py-5 px-10 rounded-md text-black font-bold text-lg"
+        >
           <Link href="/ProjectPage">View All Projects</Link>
         </button>
       </div>

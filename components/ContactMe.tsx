@@ -70,7 +70,8 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#8185E1] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#8185E1] hover:bg-[#9299ff] shadow-lg 
+            py-5 px-10 rounded-md text-black font-bold text-lg"
           >
             Connect
           </button>

@@ -1,12 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import aboutImage from "../images/about-image.jpeg";
-
+import { Tooltip } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,7 +15,6 @@ export default function About({}: Props) {
         About
       </h3>
 
-      {/* <div className="flex-row items-center justify-center"> */}
       <motion.div
         initial={{
           x: -200,
@@ -33,12 +28,21 @@ export default function About({}: Props) {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-50 rounded-full object-cover
         md:rounded-lg md:w-50 md:h-80 xl:w-[450px] xl:h-[600px] relative"
       >
-        <iframe
-          src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
-          width="100%"
-          height="100%"
-          className="hidden md:inline"
-        ></iframe>
+        <Tooltip
+          label={`Try zooming out or click and scroll!`}
+          aria-label="A tooltip"
+          placement="right-start"
+          bg="#E17FB3"
+          color="black"
+          className="px-3 my-7"
+        >
+          <iframe
+            src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
+            width="100%"
+            height="100%"
+            className="hidden md:inline"
+          ></iframe>
+        </Tooltip>
       </motion.div>
 
       <div className="space-y-10 px-0 md:px-10">
@@ -68,7 +72,6 @@ export default function About({}: Props) {
           that changes the world.
         </p>
       </div>
-      {/* </div> */}
     </motion.div>
   );
 }

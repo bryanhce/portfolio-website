@@ -23,13 +23,13 @@ const ProjectItemRight = ({ content }: Props) => {
         <h4 className="text-4xl font-semibold">{content.title}</h4>
         <Text className="py-5 text-base text-left">{content.desc}</Text>
         <Text className="pb-5 text-base text-left">
-          <span className="font-bold text-[#E17FB3]">Areas of growth: </span>
+          <span className="font-bold text-[#bf6b98]">Areas of growth: </span>
           {content.learningAreas}
         </Text>
         <div className="w-15 text-left">
           {content.githubLink && (
             <button
-              className="bg-[#8185E1] py-3 px-5 mr-5
+              className="bg-[#8185E1] hover:bg-[#9299ff] shadow-lg py-3 px-5 mr-5
               rounded-md text-black font-bold text-lg "
             >
               <Link href={content.githubLink} target="_blank">
@@ -39,7 +39,7 @@ const ProjectItemRight = ({ content }: Props) => {
           )}
           {content.demoLink && (
             <button
-              className="bg-[#E17FB3] py-3 px-5 
+              className="bg-[#E17FB3] hover:bg-[#ff90cb] shadow-lg py-3 px-5 
               rounded-md text-black font-bold text-lg "
             >
               <Link href={content.demoLink} target="_blank">

@@ -34,7 +34,7 @@ const ProjectItemLeft = ({ content }: Props) => {
         <div className="w-15 text-right">
           {content.githubLink && (
             <button
-              className="bg-[#8185E1] py-3 px-5 mr-5
+              className="bg-[#8185E1] hover:bg-[#9299ff] shadow-lg py-3 px-5 mr-5
               rounded-md text-black font-bold text-lg "
             >
               <Link href={content.githubLink} target="_blank">
@@ -44,7 +44,7 @@ const ProjectItemLeft = ({ content }: Props) => {
           )}
           {content.demoLink && (
             <button
-              className="bg-[#E17FB3] py-3 px-5 
+              className="bg-[#E17FB3] hover:bg-[#ff90cb] shadow-lg py-3 px-5 
               rounded-md text-black font-bold text-lg "
             >
               <Link href={content.demoLink} target="_blank">
