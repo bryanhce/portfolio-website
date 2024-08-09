@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import Banner from "./Banner";
 import Link from "next/link";
 
-type Props = {};
-
-function Projects({}: Props) {
+function Projects() {
   return (
     <motion.div
       initial={{ opacity: 0 }}

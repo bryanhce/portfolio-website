@@ -1,8 +1,5 @@
 import React from "react";
-
 import { useForm, SubmitHandler } from "react-hook-form";
-
-type Props = {};
 
 type Inputs = {
   name: string;
@@ -11,7 +8,7 @@ type Inputs = {
   message: string;
 };
 
-function ContactMe({}: Props) {
+function ContactMe() {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {

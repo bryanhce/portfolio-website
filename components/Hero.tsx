@@ -5,9 +5,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import profilePicture from "../images/profile-picture.png";
 
-type Props = {};
-
-export default function Hero({}: Props) {
+export default function Hero() {
   const [text, count] = useTypewriter({
     words: ["an entrepreneur", "a developer", "a food lover"],
     loop: true,

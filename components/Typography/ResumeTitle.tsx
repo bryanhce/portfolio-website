@@ -1,13 +1,13 @@
 import React from "react";
 import { Tooltip } from "@chakra-ui/react";
 
-type Props = {
+type ResumeTitleProps = {
   text?: string;
-  onClick: () => any;
+  onClick: () => void;
   isOpen: boolean;
 };
 
-const ResumeTitle = ({ text, onClick, isOpen }: Props) => {
+const ResumeTitle = ({ text, onClick, isOpen }: ResumeTitleProps) => {
   return (
     <Tooltip
       label={`Click to ${isOpen ? "expand" : "contract"}`}

@@ -3,12 +3,20 @@ import ResumeTitle from "../Typography/ResumeTitle";
 import { Text, Collapse, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 
-type Props = {
-  content: Array<any>;
+type ResumeContent = {
+  title: string;
+  date: string;
+  titleLink?: string;
+  desc?: string;
+  desc2?: string;
+};
+
+type SectionProps = {
+  content: Array<ResumeContent>;
   title: string;
 };
 
-const Section = ({ content, title }: Props) => {
+const Section = ({ content, title }: SectionProps) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (

@@ -1,4 +1,3 @@
-import { useStatStyles } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
@@ -10,7 +9,7 @@ const Footer = () => {
     <footer className="sticky bottom-5 w-full cursor-pointer">
       <div className="flex items-center justify-cecnter">
         <SocialIcon
-          url="https://www.linkedin.com/in/bryan-ho-7271b91b4/"
+          url="https://www.linkedin.com/in/bryanhce/"
           fgColor={isHoverLinkedIn ? "#0072b1" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHoverLinkedIn(true)}

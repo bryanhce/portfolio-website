@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CCImage from "../images/CC.png";
 import noisyBirdImage from "../images/NoisyBird.png";
 import rubiSlicesImage from "../images/RubiSlices.png";
@@ -7,8 +7,8 @@ import nbwuImage from "../images/nbwu-icon.jpeg";
 import sgFoodImage from "../images/sgFoodPicker.png";
 import strikerImage from "../images/striker-icon.jpeg";
 
-type Props = {
-  images: Array<any>;
+type ImageBannerProps = {
+  images: Array<{ id: number; image: StaticImageData }>;
 };
 
 const Banner = () => {
@@ -24,7 +24,7 @@ const Banner = () => {
     image,
   }));
 
-  const ImageBanner = ({ images }: Props) => {
+  const ImageBanner = ({ images }: ImageBannerProps) => {
     return (
       <ul
         className="md:flex md:items-center 
@@ -41,11 +41,7 @@ const Banner = () => {
   };
 
   return (
-    <div
-      className="w-full inline-flex flex-nowrap"
-      // for gradient transition but only works on one end
-      //   [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
-    >
+    <div className="w-full inline-flex flex-nowrap">
       <ImageBanner images={images} />
       <ImageBanner images={images} />
     </div>

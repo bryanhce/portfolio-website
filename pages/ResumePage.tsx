@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Section from "../components/ResumeComponents/Section";
+import Section from "../components/Resume/Section";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
