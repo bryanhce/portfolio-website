@@ -1,19 +1,12 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import Image from "next/image";
 import { Stack, Text } from "@chakra-ui/react";
-
-type Content = {
-  title: string;
-  desc: string;
-  learningAreas: string;
-  githubLink: string;
-  demoLink: string;
-  image: StaticImageData;
-};
+import { TProjectContent } from "./ProjectContentType";
+import PurpleButton from "../UIElements/PurpleButton";
+import PinkButton from "../UIElements/PinkButton";
 
 type Props = {
-  content: Content;
+  content: TProjectContent;
 };
 
 const ProjectItemLeft = ({ content }: Props) => {
@@ -33,24 +26,18 @@ const ProjectItemLeft = ({ content }: Props) => {
         </Text>{" "}
         <div className="w-15 text-right">
           {content.githubLink && (
-            <button
-              className="bg-[#8185E1] hover:bg-[#9299ff] shadow-lg py-3 px-5 mr-5
-              rounded-md text-black font-bold text-lg "
-            >
-              <Link href={content.githubLink} target="_blank">
-                Github
-              </Link>
-            </button>
+            <PurpleButton
+              text="Github"
+              href={content.githubLink}
+              isOpenNewTab={true}
+            />
           )}
           {content.demoLink && (
-            <button
-              className="bg-[#E17FB3] hover:bg-[#ff90cb] shadow-lg py-3 px-5 
-              rounded-md text-black font-bold text-lg "
-            >
-              <Link href={content.demoLink} target="_blank">
-                Demo
-              </Link>
-            </button>
+            <PinkButton
+              text="Demo"
+              href={content.demoLink}
+              isOpenNewTab={true}
+            />
           )}
         </div>
       </Stack>

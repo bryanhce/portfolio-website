@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Banner from "../components/Banner";
 import { motion } from "framer-motion";
-import ProjectItemLeft from "../components/ProjectItemLeft";
-import ProjectItemRight from "../components/ProjectItemRight";
+import ProjectItemLeft from "../components/Project/ProjectItemLeft";
+import ProjectItemRight from "../components/Project/ProjectItemRight";
 
 import strikerImage from "../images/striker-icon.jpeg";
 import trustMeBroImage from "../images/TrustMeBro.jpg";

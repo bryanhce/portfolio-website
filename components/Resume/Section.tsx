@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeTitle from "../Typography/ResumeTitle";
+import ResumeTitle from "./ResumeTitle";
 import { Text, Collapse, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 
