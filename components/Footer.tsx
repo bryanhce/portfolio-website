@@ -10,14 +10,14 @@ const Footer = () => {
       <div className="flex items-center justify-cecnter">
         <SocialIcon
           url="https://www.linkedin.com/in/bryanhce/"
-          fgColor={isHoverLinkedIn ? "#0072b1" : "gray"}
+          fgColor={isHoverLinkedIn ? "#bf6b98" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHoverLinkedIn(true)}
           onMouseLeave={() => setIsHoverLinkedIn(false)}
         />
         <SocialIcon
           url="https://github.com/bryanhce"
-          fgColor={isHoverGithub ? "black" : "gray"}
+          fgColor={isHoverGithub ? "#bf6b98" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHoverGithub(true)}
           onMouseLeave={() => setIsHoverGithub(false)}

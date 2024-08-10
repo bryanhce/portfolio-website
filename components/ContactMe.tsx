@@ -8,15 +8,25 @@ type Inputs = {
   message: string;
 };
 
-function ContactMe() {
+type ContactMeProps = {
+  isFormal?: boolean;
+};
+
+function ContactMe({ isFormal }: ContactMeProps) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:ho.cheng.en.bryan@gmail.com?subject=${formData.subject}&body=Hello, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
 
-  const messagePlaceholder =
-    "Dear Bryan, \n\nI will catch a grenade for you. \n\nBest, \nBruno Mars";
+  const namePlaceholder = isFormal ? "Name" : "Name: Bruno Mars";
+  const emailPlaceholder = isFormal ? "Email" : "Email: bruno@gmail.com";
+  const subjectPlaceholder = isFormal
+    ? "Subject"
+    : "Subject: Request to perform at your birthday";
+  const messagePlaceholder = isFormal
+    ? "Message Body"
+    : "Dear Bryan, \n\nI will catch a grenade for you. \n\nBest, \nBruno Mars";
 
   return (
     <div
@@ -41,13 +51,13 @@ function ContactMe() {
           <div className="md:flex md:space-x-2 space-y-2 md:space-y-0">
             <input
               {...register("name")}
-              placeholder="Name: Bruno Mars"
+              placeholder={namePlaceholder}
               className="contactInput"
               type="text"
             />
             <input
               {...register("email")}
-              placeholder="Email: bruno@gmail.com"
+              placeholder={emailPlaceholder}
               className="contactInput"
               type="email"
             />
@@ -55,7 +65,7 @@ function ContactMe() {
 
           <input
             {...register("subject")}
-            placeholder="Subject: Request to perform at your birthday"
+            placeholder={subjectPlaceholder}
             className="contactInput"
             type="text"
           />
