@@ -24,17 +24,19 @@ function Projects() {
           <span className="underline decoration-[#8185E1]/50">passion</span>{" "}
           mine
         </h4>
-        <p className="text-base md:w-1/4">
-          Exploring different projects throughout the years have been an
-          enriching journey for me. From{" "}
-          <span className="text-purple-300 decoration-[#8185E1]/50">
-            web development to mobile applications
-          </span>
-          , each project has been a learning opportunity that has fueled my
-          passion for creating and problem-solving in the digital space.
-          I&apos;m grateful for the chance to contribute to meaningful projects
-          and bring ideas to life through software engineering.
-        </p>
+        <div className="lg:w-10/12">
+          <p className="text-base md:w-1/4">
+            Exploring different projects throughout the years have been an
+            enriching journey for me. From{" "}
+            <span className="text-purple-300 decoration-[#8185E1]/50">
+              web development to mobile applications
+            </span>
+            , each project has been a learning opportunity that has fueled my
+            passion for creating and problem-solving in the digital space.
+            I&apos;m grateful for the chance to contribute to meaningful
+            projects and bring ideas to life through software engineering.
+          </p>
+        </div>
         <PurpleButton text="View All Projects" href="/ProjectPage" />
       </div>
     </motion.div>

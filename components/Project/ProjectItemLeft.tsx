@@ -11,17 +11,19 @@ type Props = {
 
 const ProjectItemLeft = ({ content }: Props) => {
   return (
-    <div className="flex flex-row max-w-7xl px-10 pt-12 pb-3 justify-evenly mx-auto items-center">
-      <Image
-        className="relative h-80 w-70 px-10 object-contain hidden md:inline"
-        src={content.image}
-        alt={`${content.title} image`}
-      />
-      <Stack>
+    <div className="flex flex-row max-w-7xl px-10 pt-12 pb-10 justify-evenly mx-auto items-center">
+      <div className="md:w-2/5 md:justify-start items-center flex">
+        <Image
+          className="h-[22rem] w-[22rem] object-contain shadow-[#111010] shadow-lg hidden md:inline "
+          src={content.image}
+          alt={`${content.title} image`}
+        />
+      </div>
+      <Stack className="md:w-3/5">
         <h4 className="text-4xl font-semibold">{content.title}</h4>
         <Text className="py-5 text-base text-left">{content.desc}</Text>
         <Text className="pb-5 text-base text-left">
-          <span className="font-bold text-[#8185E1]">Areas of growth: </span>
+          <span className="font-bold text-[#969bfa]">Areas of growth: </span>
           {content.learningAreas}
         </Text>{" "}
         <div className="w-15 text-right">
