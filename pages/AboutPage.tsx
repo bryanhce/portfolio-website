@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import SpotifyDivision from "../components/About/SpotifyDivision";
-import SkillsDivision from "../components/About/SkillsDivision";
+// import SpotifyDivision from "../components/About/SpotifyDivision";
+// import SkillsDivision from "../components/About/SkillsDivision";
 
 const AboutPage = () => {
   const [text, count] = useTypewriter({
@@ -24,8 +24,13 @@ const AboutPage = () => {
           <Cursor cursorColor="#8185E1" />
         </h1>
         <br />
-        <SkillsDivision />
-        <SpotifyDivision />
+        {/* uncomment when completed */}
+        {/* <SkillsDivision />
+        <SpotifyDivision /> */}
+        {/* delete once others are done */}
+        <div className="text-center">
+          <span>Under construction! Coming soon!</span>
+        </div>
       </div>
       <Footer />
     </div>

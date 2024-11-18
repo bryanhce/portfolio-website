@@ -18,8 +18,37 @@ import nbwuImage from "../images/nbwu-icon.jpeg";
 import iPainImage from "../images/iPain.png";
 import currProjectImage from "../images/portfolio-website-pic.png";
 import storyGenImage from "../images/storyGenerator.png";
+import effBiImage from "../images/Eff-BI-Logo.png";
+import speakEasyImage from "../images/SpeakEasy.png";
+import t4Image from "../images/tic-tac-toe-tum-gameplay.png";
 
 const contents = [
+  {
+    title: "Eff BI",
+    desc: "Eff BI (Effortless Business Intelligence), is a text-to-visualization application which enables business analysts, managers, and sales teams to easily visualise data insights. Users connect directly to their database from our app via their DB URI. Following, they can interact with their data using natural language, eliminating the need for users to write SQL queries or know how to create graphs. We built this as part of CS3216 and won Best Project for CS3216 and Best Open Sourced Project in the 25th STePS!",
+    learningAreas:
+      "Django, PostgreSQL, TypeScript, Vite, Multiple Step LLM Agent pipelining, LangChain",
+    githubLink: "https://github.com/Vshnv2001/eff-bi",
+    demoLink: "https://eff-bi.vercel.app/",
+    image: effBiImage,
+  },
+  {
+    title: "SpeakEasy",
+    desc: "SpeakEasy is a language learning platform that focuses on immersing users in real-world scenarios. Each scenario is designed to provide contextual learning, where the flow of conversation is dynamic, driven by interaction between the user and a generative AI. This allows for personalised and adaptive language practice, offering a more natural and engaging learning experience.",
+    learningAreas:
+      "MongoDB, Django, TypeScript, ShadCN, Google Cloud Storage, OpenAI APIs",
+    githubLink: "https://github.com/bryanhce/SpeakEasy",
+    demoLink: "https://speakeasy-speakfreely.netlify.app/",
+    image: speakEasyImage,
+  },
+  {
+    title: "Tic-Tac-Toe-Tum",
+    desc: "This game is a twist on the classic tic-tac-toe where we take it up a notch! Now you need 4 in a row to claim victory! Furthermore, you get a one-time use superpower that allows you to change your opponent's square to yours!",
+    learningAreas: "WebSockets, React, building game rooms",
+    githubLink: "https://github.com/bryanhce/tic-tac-toe",
+    demoLink: "https://tic-tac-toe-tum.vercel.app/",
+    image: t4Image,
+  },
   {
     title: "RubiSlices",
     desc: "RubiSlices is a script that generates TikTok and Youtube Shorts using content from random Reddit Threads. I developed this with Google's text to speech engine and HuggingFace LLM pipeline for text summarization and censorship. Docker came in handy for package versioning across developers.",

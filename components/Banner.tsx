@@ -6,6 +6,9 @@ import rubiSlicesImage from "../images/RubiSlices.png";
 import nbwuImage from "../images/nbwu-icon.jpeg";
 import sgFoodImage from "../images/sgFoodPicker.png";
 import strikerImage from "../images/striker-icon.jpeg";
+import effBiImage from "../images/Eff-BI-Logo.png";
+import quzzifyImage from "../images/quizzify_logo.png";
+import speakEasyImage from "../images/SpeakEasy.png";
 
 type ImageBannerProps = {
   images: Array<{ id: number; image: StaticImageData }>;
@@ -19,6 +22,9 @@ const Banner = () => {
     strikerImage,
     noisyBirdImage,
     rubiSlicesImage,
+    effBiImage,
+    quzzifyImage,
+    speakEasyImage,
   ].map((image, id) => ({
     id,
     image,
