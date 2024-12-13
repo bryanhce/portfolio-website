@@ -79,8 +79,8 @@ function ContactMe({ isFormal }: ContactMeProps) {
         Connect
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold md:text-center mb-[60px]">
+      <div className="flex flex-col space-y-12">
+        <h4 className="text-4xl font-semibold md:text-center mb-[60px] md:mt-16">
           <span className="decoration-[#8185E1]/50 underline">
             Let&apos;s chat!
           </span>
@@ -88,19 +88,19 @@ function ContactMe({ isFormal }: ContactMeProps) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2"
         >
           <div className="md:flex md:space-x-2 space-y-2 md:space-y-0">
             <input
               {...register("name")}
               placeholder={namePlaceholder}
-              className="contactInput"
+              className="contactInput w-full"
               type="text"
             />
             <input
               {...register("email")}
               placeholder={emailPlaceholder}
-              className="contactInput"
+              className="contactInput w-full"
               type="email"
             />
           </div>
