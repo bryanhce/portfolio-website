@@ -11,10 +11,11 @@ type Props = {
 
 const ProjectItemLeft = ({ content }: Props) => {
   return (
-    <div className="flex flex-row max-w-7xl px-10 pt-12 pb-10 justify-evenly mx-auto items-center">
-      <div className="md:w-2/5 md:justify-start items-center flex">
+    <div className="flex flex-col md:flex-row max-w-7xl px-10 pt-5 md:pt-12 pb-10 justify-evenly mx-auto items-center">
+      <div className="pb-5 md:pb-0 md:w-2/5 md:justify-start items-center flex">
         <Image
-          className="h-[22rem] w-[22rem] object-contain shadow-[#111010] shadow-lg hidden md:inline "
+          className="h-[22rem] w-[22rem] object-contain 
+          shadow-[#111010] shadow-lg"
           src={content.image}
           alt={`${content.title} image`}
         />

@@ -28,21 +28,12 @@ export default function About() {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-50 rounded-full object-cover
         md:rounded-lg md:w-50 md:h-80 xl:w-[450px] xl:h-[600px] relative"
       >
-        <Tooltip
-          label={`Try zooming out or click and scroll!`}
-          aria-label="A tooltip"
-          placement="right-start"
-          bg="#E17FB3"
-          color="black"
-          className="px-3 my-7"
-        >
-          <iframe
-            src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
-            width="100%"
-            height="100%"
-            className="hidden md:inline"
-          ></iframe>
-        </Tooltip>
+        <iframe
+          src="https://my.spline.design/bryanavatar2copy-9cd6ce351d1725f8d277cda7762a03b0/"
+          width="100%"
+          height="100%"
+          className="hidden md:inline"
+        ></iframe>
       </motion.div>
 
       <div className="space-y-10 px-0 md:px-10">

@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
-const Footer = () => {
+interface FooterProps {
+  isVisibleOnMobile?: boolean;
+}
+
+const Footer = ({ isVisibleOnMobile = true }: FooterProps) => {
   const [isHoverLinkedIn, setIsHoverLinkedIn] = useState(false);
   const [isHoverGithub, setIsHoverGithub] = useState(false);
 
   return (
-    <footer className="sticky bottom-5 w-full cursor-pointer">
+    <footer
+      className={`${
+        !isVisibleOnMobile && "hidden"
+      } md:inline sticky bottom-5 w-full cursor-pointer`}
+    >
       <div className="flex items-center justify-cecnter">
         <SocialIcon
           url="https://www.linkedin.com/in/bryanhce/"

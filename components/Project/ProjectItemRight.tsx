@@ -11,7 +11,7 @@ type Props = {
 
 const ProjectItemRight = ({ content }: Props) => {
   return (
-    <div className="flex flex-row max-w-7xl px-10 pt-12 pb-10 justify-evenly mx-auto items-center">
+    <div className="flex flex-col-reverse md:flex-row max-w-7xl px-10 pt-12 pb-10 md:justify-evenly mx-auto items-center">
       <Stack className="md:w-3/5">
         <h4 className="text-4xl font-semibold">{content.title}</h4>
         <Text className="py-5 text-base text-left">{content.desc}</Text>
@@ -36,9 +36,9 @@ const ProjectItemRight = ({ content }: Props) => {
           )}
         </div>
       </Stack>
-      <div className="md:w-2/5 justify-end items-center flex">
+      <div className="pb-5 md:pb-0 md:w-2/5 justify-end items-center flex">
         <Image
-          className="h-[22rem] w-[22rem] object-contain shadow-[#111010] shadow-lg hidden md:inline"
+          className="h-[22rem] w-[22rem] object-contain shadow-[#111010] shadow-lg"
           src={content.image}
           alt={`${content.title} image`}
         />

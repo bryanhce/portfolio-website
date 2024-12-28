@@ -152,6 +152,7 @@ const ProjectPage = () => {
     words: ["My project showcase"],
     loop: 1,
   });
+
   return (
     <div
       className="bg-gray-700 text-white h-screen 
@@ -160,7 +161,7 @@ const ProjectPage = () => {
     >
       <Header isMainPage={false} />
       <div className="flex-col">
-        <h1 className="text-4xl lg:text-5xl font-semibold px-10 mb-5 text-center">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold px-10 md:mb-5 text-center">
           <span>{text}</span>
           <Cursor cursorColor="#8185E1" />
         </h1>
@@ -174,13 +175,29 @@ const ProjectPage = () => {
         </motion.div>
         {contents.map((c, id) =>
           id % 2 == 0 ? (
-            <ProjectItemLeft key={id} content={c} />
+            <motion.div
+              whileInView={{ transform: "translateY(0px)", opacity: 1 }}
+              initial={{ transform: "translateY(100px)", opacity: 0 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              key={id}
+            >
+              <ProjectItemLeft content={c} />
+            </motion.div>
           ) : (
-            <ProjectItemRight key={id} content={c} />
+            <motion.div
+              whileInView={{ transform: "translateY(0px)", opacity: 1 }}
+              initial={{ transform: "translateY(100px)", opacity: 0 }}
+              transition={{ type: "spring", duration: 2 }}
+              viewport={{ once: true }}
+              key={id}
+            >
+              <ProjectItemRight content={c} />
+            </motion.div>
           )
         )}
       </div>
-      <Footer />
+      <Footer isVisibleOnMobile={false} />
     </div>
   );
 };
