@@ -38,7 +38,7 @@ const ProjectItemRight = ({ content }: Props) => {
       </Stack>
       <div className="pb-5 md:pb-0 md:w-2/5 justify-end items-center flex">
         <Image
-          className="h-[22rem] w-[22rem] object-contain shadow-[#111010] shadow-lg"
+          className="h-[16rem] w-[16rem] md:h-[22rem] md:w-[22rem] object-contain shadow-[#111010] shadow-lg"
           src={content.image}
           alt={`${content.title} image`}
         />

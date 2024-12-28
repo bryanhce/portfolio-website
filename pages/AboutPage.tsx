@@ -2,8 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-// import SpotifyDivision from "../components/About/SpotifyDivision";
-// import SkillsDivision from "../components/About/SkillsDivision";
+import SpotifyDivision from "../components/About/SpotifyDivision";
+import SkillsDivision from "../components/About/SkillsDivision";
+// import ScrollingText from "../components/About/ScrollingText";
 
 const AboutPage = () => {
   const [text, count] = useTypewriter({
@@ -25,6 +26,7 @@ const AboutPage = () => {
         </h1>
         <br />
         {/* uncomment when completed */}
+        {/* <ScrollingText /> */}
         {/* <SkillsDivision />
         <SpotifyDivision /> */}
         {/* delete once others are done */}
