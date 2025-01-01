@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import profilePicture from "../images/profile-picture.png";
+import profilePicture from "../../images/profile-picture.png";
 
 export default function Hero() {
   const [text, count] = useTypewriter({

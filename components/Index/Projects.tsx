@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Banner from "./Banner";
-import PurpleButton from "./UIElements/PurpleButton";
+import Banner from "../Banner";
+import PurpleButton from "../UIElements/PurpleButton";
 
 function Projects() {
   return (

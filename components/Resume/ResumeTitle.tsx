@@ -18,13 +18,13 @@ const ResumeTitle = ({ text, onClick, isOpen }: ResumeTitleProps) => {
       hasArrow
       className="px-3"
     >
-      <text
+      <h1
         className="text-3xl cursor-pointer
        text-[#8185E1] hover:text-[#8185E1]/90 font-bold"
         onClick={onClick}
       >
         {text}
-      </text>
+      </h1>
     </Tooltip>
   );
 };
