@@ -159,7 +159,7 @@ const ProjectPage = () => {
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8185E1]"
     >
-      <Header isMainPage={false} />
+      <Header isHeaderSticky={false} />
       <div className="flex-col">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold px-10 md:mb-5 text-center">
           <span>{text}</span>

@@ -1,17 +1,29 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type Props = {
-  isMainPage: boolean;
+type HeaderProps = {
+  isHeaderSticky: boolean;
 };
 
-export default function Header({ isMainPage }: Props) {
+export default function Header({ isHeaderSticky }: HeaderProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const sectionPath = router.asPath.split("#")[1];
+    if (sectionPath) {
+      const section = document.getElementById(sectionPath);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [router.asPath]);
+
   return (
     <header
       className={`${
-        isMainPage ? "sticky" : ""
+        isHeaderSticky ? "sticky" : ""
       } top-1 p-5 flex items-start justify-between max-w-7xl mx-auto
     z-20 xl:items-center`}
     >

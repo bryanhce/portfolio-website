@@ -24,7 +24,7 @@ export default function Hero() {
         alt="profile picture"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-300 pl-5 pb-2 tracking-[15px]">
+        <h2 className="text-lg uppercase text-gray-300 pl-5 pb-2 tracking-[15px]">
           [Bryan Ho]
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">

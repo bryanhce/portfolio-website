@@ -24,7 +24,7 @@ const Section = ({ content, title }: SectionProps) => {
       <ResumeTitle text={title} onClick={onToggle} isOpen={isOpen} />
       <Collapse className="mt-4" in={!isOpen} animateOpacity>
         {content.map((c) => (
-          <>
+          <div key={c.title}>
             {c.titleLink ? (
               <Text className="text-lg md:text-2xl">
                 <Link
@@ -47,7 +47,7 @@ const Section = ({ content, title }: SectionProps) => {
             </Text>
             <br />
             <br />
-          </>
+          </div>
         ))}
       </Collapse>
     </div>

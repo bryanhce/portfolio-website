@@ -11,7 +11,7 @@ const Custom404 = () => {
 snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8185E1]"
     >
-      <Header isMainPage={true} />
+      <Header isHeaderSticky={true} />
       <div className="text-center flex flex-col items-center justify-center">
         <h2 className="text-4xl lg:text-5xl font-semibold pt-15">
           Well this is awkward...

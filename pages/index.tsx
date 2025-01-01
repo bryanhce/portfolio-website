@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <Analytics />
-      <Header isMainPage={true} />
+      <Header isHeaderSticky={true} />
 
       <section id="hero" className="snap-start">
         <Hero />
