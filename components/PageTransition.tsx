@@ -25,9 +25,14 @@ const motionStates = {
     transition: { duration: 0 },
   },
 
-  removeSquares: (i: number) => ({
+  populate: (delay: Array<number>) => ({
+    opacity: 1,
+    transition: { duration: 0, delay: 0.02 * delay[0] },
+  }),
+
+  remove: (delay: Array<number>) => ({
     opacity: 0,
-    transition: { duration: 0, delay: 0.05 * i },
+    transition: { duration: 0, delay: 0.02 * delay[1] },
   }),
 };
 
@@ -52,7 +57,7 @@ const PageTransition = () => {
   }, []);
 
   const getBlocks = useMemo(() => {
-    return (dimensions: Dimension) => {
+    return (dimensions: Dimension, columnIndex: number) => {
       const { width, height } = dimensions;
 
       const blockSize = width * 0.05;
@@ -62,13 +67,12 @@ const PageTransition = () => {
       return shuffledIndexes.map((randomIndex: number, index: number) => (
         <motion.div
           key={index}
-          className={`${
-            randomIndex % 2 ? "bg-[#8185E1]" : "bg-[#fa8dc7]"
-          } w-full h-[5vw] z-[30]`}
+          className="bg-[#8185E1] w-full h-[5vw] z-[30]"
           variants={motionStates}
           initial="initial"
-          animate="removeSquares"
-          custom={randomIndex}
+          animate="remove"
+          exit="populate"
+          custom={[columnIndex + randomIndex, 20 - columnIndex + randomIndex]}
         />
       ));
     };
@@ -78,7 +82,7 @@ const PageTransition = () => {
     <div className="hidden md:flex h-screen overflow-hidden absolute top-0 left-0 z-[21] pointer-events-none">
       {[...Array(20)].map((_, index) => (
         <div key={index} className="flex flex-col w-[5vw] h-full">
-          {getBlocks(dimensions)}
+          {getBlocks(dimensions, index)}
         </div>
       ))}
     </div>
