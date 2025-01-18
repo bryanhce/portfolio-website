@@ -4,7 +4,15 @@ import Section from "../components/Resume/Section";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-const careerHistory = [
+export type ResumeContent = {
+  title: string;
+  date: string;
+  titleLink?: string;
+  desc?: string;
+  desc2?: string;
+};
+
+const careerHistory: ResumeContent[] = [
   {
     title: "ShopBack, Backend Engineer Intern",
     titleLink: "https://www.shopback.sg/",
@@ -48,7 +56,7 @@ const careerHistory = [
   },
 ];
 
-const education = [
+const education: ResumeContent[] = [
   {
     title: "National University of Singapore (NUS)",
     desc: "Bachelor of Computer Science, Honours",
@@ -74,7 +82,7 @@ const education = [
   { title: "Victoria School", date: "Jan 2013 - Dec 2016" },
 ];
 
-const leadership = [
+const leadership: ResumeContent[] = [
   {
     title: "Chairperson, tEnPower Tembusu College",
     date: "Aug 2022 - May 2023",
@@ -89,7 +97,7 @@ const leadership = [
   },
 ];
 
-const volunteering = [
+const volunteering: ResumeContent[] = [
   {
     title: "Software Developer, CS + Social Good",
     desc: "Planned the development of website for a social group.",

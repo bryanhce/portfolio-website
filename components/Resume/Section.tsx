@@ -2,14 +2,7 @@ import React from "react";
 import ResumeTitle from "./ResumeTitle";
 import { Text, Collapse, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
-
-type ResumeContent = {
-  title: string;
-  date: string;
-  titleLink?: string;
-  desc?: string;
-  desc2?: string;
-};
+import { ResumeContent } from "../../pages/ResumePage";
 
 type SectionProps = {
   content: Array<ResumeContent>;
