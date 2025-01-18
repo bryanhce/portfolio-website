@@ -4,7 +4,12 @@ import Section from "../components/Resume/Section";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-const work = [
+const careerHistory = [
+  {
+    title: "ShopBack, Backend Engineer Intern",
+    titleLink: "https://www.shopback.sg/",
+    date: "Jan 2025 - July 2025",
+  },
   {
     title: "GovTech, Software Engineer Intern",
     titleLink: "https://www.tech.gov.sg/",
@@ -32,7 +37,7 @@ const work = [
     date: "May 2022 - Aug 2022",
   },
   {
-    title: "Ohmyhome, Backend Engineer Intern",
+    title: "Ohmyhome, Backend and Data Engineer Intern",
     titleLink: "https://ohmyhome.com/en-sg/",
     date: "Feb 2021 - Aug 2021",
   },
@@ -48,7 +53,7 @@ const education = [
     title: "National University of Singapore (NUS)",
     desc: "Bachelor of Computer Science, Honours",
     desc2: "Specialising in Artificial Intelligence (AI)",
-    date: "Aug 2021 - May 2025",
+    date: "Aug 2021 - Dec 2025",
   },
   {
     title: "University of North Carolina, Chapel Hill (UNC)",
@@ -125,7 +130,7 @@ const ResumePage = () => {
           <span>{text}</span>
           <Cursor cursorColor="#8185E1" />
         </h1>
-        <Section content={work} title={"Career History"} />
+        <Section content={careerHistory} title={"Career History"} />
         <Section content={education} title={"Education"} />
         <Section content={leadership} title={"Leadership Experiences"} />
         <Section content={volunteering} title={"Volunteering Experiences"} />
