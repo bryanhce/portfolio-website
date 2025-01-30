@@ -7,6 +7,11 @@ type HeaderProps = {
   isHeaderSticky: boolean;
 };
 
+const heroButtonStyle =
+  "px-6 py-2 border border-[#242424] rounded-full border-none \
+  uppercase text-sm tracking-widest text-gray-300 \
+  transition-all hover:border-[#8185E1] hover:text-[#E17FB3]";
+
 export default function Header({ isHeaderSticky }: HeaderProps) {
   const router = useRouter();
 
@@ -22,10 +27,10 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
 
   return (
     <header
-      className={`${
-        isHeaderSticky ? "sticky" : ""
-      } top-1 p-5 flex items-start justify-between max-w-7xl mx-auto
-    z-20 xl:items-center`}
+      className={`${isHeaderSticky ? "sticky" : ""} 
+      top-1 p-5 flex items-start 
+      justify-between max-w-7xl mx-auto
+      z-20 xl:items-center`}
     >
       <motion.div
         initial={{
@@ -45,16 +50,16 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
       >
         <div className="pt-1">
           <Link href="/">
-            <button className="heroButton border-none">Home</button>
+            <button className={heroButtonStyle}>Home</button>
           </Link>
           <Link href="/ProjectPage">
-            <button className="heroButton border-none">Projects</button>
+            <button className={heroButtonStyle}>Projects</button>
           </Link>
           <Link href="/#about" className="hidden md:inline">
-            <button className="heroButton border-none">About</button>
+            <button className={heroButtonStyle}>About</button>
           </Link>
           <Link href="/ResumePage">
-            <button className="heroButton border-none">Resume</button>
+            <button className={heroButtonStyle}>Resume</button>
           </Link>
         </div>
       </motion.div>
@@ -76,7 +81,7 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
         className="flex flex-row items-center text-gray-300 cursor-pointer pt-1"
       >
         <Link href="/#contact">
-          <button className="heroButton border-none">Connect</button>
+          <button className={heroButtonStyle}>Connect</button>
         </Link>
       </motion.div>
     </header>

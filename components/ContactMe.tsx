@@ -12,6 +12,11 @@ type ContactMeProps = {
   isFormal?: boolean;
 };
 
+const contactInputStyle =
+  "outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] \
+  placeholder-gray-500 transition-all focus:border-[#8185E1] \
+  focus:text-[#8185E1] hover:border-[#8185E1] w-full";
+
 function ContactMe({ isFormal }: ContactMeProps) {
   const { register, handleSubmit } = useForm<Inputs>();
   const toast = useToast();
@@ -93,13 +98,13 @@ function ContactMe({ isFormal }: ContactMeProps) {
             <input
               {...register("name")}
               placeholder={namePlaceholder}
-              className="contactInput w-full"
+              className={contactInputStyle}
               type="text"
             />
             <input
               {...register("email")}
               placeholder={emailPlaceholder}
-              className="contactInput w-full"
+              className={contactInputStyle}
               type="email"
             />
           </div>
@@ -107,14 +112,14 @@ function ContactMe({ isFormal }: ContactMeProps) {
           <input
             {...register("subject")}
             placeholder={subjectPlaceholder}
-            className="contactInput"
+            className={contactInputStyle}
             type="text"
           />
 
           <textarea
             {...register("message")}
             placeholder={messagePlaceholder}
-            className="contactInput h-44"
+            className={contactInputStyle + " h-44"}
           />
           <button
             type="submit"
