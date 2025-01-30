@@ -1,5 +1,3 @@
-import React from "react";
-import { Tooltip } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 export default function About() {

@@ -1,6 +1,4 @@
-import React from "react";
 import SpotifyCard from "./SpotifyCard";
-import { motion } from "framer-motion";
 
 const SpotifyDivision = () => {
   return (

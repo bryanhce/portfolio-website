@@ -1,23 +1,18 @@
-import React from "react";
-import Link from "next/link";
+import CustomButton, { CustomButtonProps } from "./CustomButton";
 
-type PurpleButtonProps = {
-  text: string;
-  href: string;
-  isOpenNewTab?: boolean;
-};
+type PurpleButtonProps = Pick<
+  CustomButtonProps,
+  "text" | "href" | "isOpenNewTab"
+>;
 
 const PurpleButton = ({ text, href, isOpenNewTab }: PurpleButtonProps) => {
   return (
-    <button
-      className="bg-[#8185E1] hover:bg-[#9299ff] 
-        shadow-lg py-3 px-5 mr-5 rounded-md 
-        text-black font-bold text-lg "
-    >
-      <Link href={href} target={isOpenNewTab ? "_blank" : "_self"}>
-        {text}
-      </Link>
-    </button>
+    <CustomButton
+      text={text}
+      href={href}
+      variant="purple"
+      isOpenNewTab={isOpenNewTab}
+    />
   );
 };
 

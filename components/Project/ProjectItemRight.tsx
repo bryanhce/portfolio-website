@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { Stack, Text } from "@chakra-ui/react";
 import { TProjectContent } from "./ProjectContentType";
@@ -19,7 +18,7 @@ const ProjectItemRight = ({ content }: Props) => {
           <span className="font-bold text-[#fa8dc7]">Areas of growth: </span>
           {content.learningAreas}
         </Text>
-        <div className="w-15 text-left">
+        <div className="text-left">
           {content.githubLink && (
             <PurpleButton
               text="Github"

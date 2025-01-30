@@ -1,4 +1,3 @@
-import React from "react";
 import { BiLogoTypescript } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
 import { BiLogoPython } from "react-icons/bi";

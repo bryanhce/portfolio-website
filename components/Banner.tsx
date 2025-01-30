@@ -1,4 +1,3 @@
-import React from "react";
 import Image, { StaticImageData } from "next/image";
 import CCImage from "../images/CC.png";
 import noisyBirdImage from "../images/NoisyBird.png";
