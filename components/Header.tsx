@@ -2,15 +2,11 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import HeaderButton from "./UIElements/HeaderButton";
 
 type HeaderProps = {
   isHeaderSticky: boolean;
 };
-
-const heroButtonStyle =
-  "px-6 py-2 border border-[#242424] rounded-full border-none \
-  uppercase text-sm tracking-widest text-gray-300 \
-  transition-all hover:border-[#8185E1] hover:text-[#E17FB3]";
 
 export default function Header({ isHeaderSticky }: HeaderProps) {
   const router = useRouter();
@@ -50,16 +46,16 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
       >
         <div className="pt-1">
           <Link href="/">
-            <button className={heroButtonStyle}>Home</button>
+            <HeaderButton text="Home" />
           </Link>
           <Link href="/ProjectPage">
-            <button className={heroButtonStyle}>Projects</button>
+            <HeaderButton text="Projects" />
           </Link>
           <Link href="/#about" className="hidden md:inline">
-            <button className={heroButtonStyle}>About</button>
+            <HeaderButton text="About" />
           </Link>
           <Link href="/ResumePage">
-            <button className={heroButtonStyle}>Resume</button>
+            <HeaderButton text="Resume" />
           </Link>
         </div>
       </motion.div>
@@ -81,7 +77,7 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
         className="flex flex-row items-center text-gray-300 cursor-pointer pt-1"
       >
         <Link href="/#contact">
-          <button className={heroButtonStyle}>Connect</button>
+          <HeaderButton text="Connect" />
         </Link>
       </motion.div>
     </header>
