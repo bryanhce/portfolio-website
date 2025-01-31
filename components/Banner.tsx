@@ -32,13 +32,20 @@ const Banner = () => {
   const ImageBanner = ({ images }: ImageBannerProps) => {
     return (
       <ul
-        className="md:flex md:items-center 
-      md:justify-start md:[&_li]:mx-5 md:[&_img]:max-w-none
-       md:animate-infinite-scroll hidden"
+        className={`md:flex md:items-center 
+          md:justify-start
+          md:animate-infinite-scroll hidden
+      `}
       >
         {images.map((i) => (
-          <li key={i.id}>
-            <Image src={i.image} width={250} height={250} alt="project image" />
+          <li key={i.id} className="md:px-10">
+            <Image
+              src={i.image}
+              width={250}
+              height={250}
+              alt="project image"
+              className="md:max-w-none"
+            />
           </li>
         ))}
       </ul>
