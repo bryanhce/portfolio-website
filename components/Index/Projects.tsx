@@ -11,20 +11,24 @@ function Projects() {
       className="flex flex-col relative h-screen text-center md:text-left
     md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-300 text-2xl hidden md:inline-flex">
+      <h3
+        className="absolute top-24 uppercase tracking-[20px]
+         text-gray-300 text-2xl hidden md:inline-flex"
+      >
         Projects
       </h3>
 
-      <div className="space-y-10 px-0 md:px-10">
-        <br />
-        <Banner />
+      <div className="space-y-10 px-0 md:px-10 md:mt-20">
+        <div>
+          <Banner />
+        </div>
         <h4 className="text-4xl font-semibold">
           Building has always been a{" "}
           <span className="underline decoration-[#8185E1]/50">passion</span>{" "}
           mine
         </h4>
         <div className="lg:w-10/12">
-          <p className="text-base md:w-1/4">
+          <p className="text-base sm:w-[60rem]">
             Exploring different projects throughout the years have been an
             enriching journey for me. From{" "}
             <span className="text-purple-300 decoration-[#8185E1]/50">
