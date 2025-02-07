@@ -11,3 +11,6 @@ This project showcases my journey, projects, skills, and interests. It serves as
 Check it out [here](https://bryanhce.vercel.app)!
 
 Hope you will enjoy exploring my website!
+
+[//]: # (To run the app without docker: npm run dev)
+[//]: # (To run the app with docker: docker compose up)
