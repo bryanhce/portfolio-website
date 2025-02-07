@@ -1,14 +1,18 @@
 version: '3.8'
 services:
   nextjs:
+    container_name: nextjs_app
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - NODE_ENV=development
+    environment:
+      - NODE_ENV=development
     ports:
       - "3000:3000"
     volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
+      - .:/app  # Mount the project root directly
+      - /app/node_modules  # Anonymous volume to avoid conflicts
+      - nextjs-cache:/app/.next
+
+volumes:
+  nextjs-cache:
