@@ -19,8 +19,8 @@ function Projects() {
       </h3>
 
       <div className="space-y-10 px-0 md:px-10 md:mt-20">
-        {/* FIXME: hack to make the banner overflow */}
-        <div className="-mx-[500px]">
+        {/* FIXME: -mx-[500px] is hack to make the banner overflow */}
+        <div className="hidden md:block md:-mx-[500px]">
           <Banner />
         </div>
         <h4 className="text-4xl font-semibold">
