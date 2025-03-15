@@ -10,7 +10,7 @@ const careerHistory: ResumeContent[] = [
   {
     title: "ShopBack, Backend Engineer Intern",
     titleLink: "https://www.shopback.sg/",
-    date: "Jan 2025 - July 2025",
+    date: "Jan 2025 - March 2025",
   },
   {
     title: "GovTech, Software Engineer Intern",

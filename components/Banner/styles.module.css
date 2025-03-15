@@ -1,0 +1,38 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.imagesContainer {
+  overflow: hidden;
+}
+
+.rowImages {
+  display: flex;
+  width: max-content;
+  animation: slide 25s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.set {
+  display: flex;
+}
+
+.singleImage {
+  margin: 0 40px;
+  z-index: 1000;
+}
+
+.set:first-child .singleImage:last-child {
+  margin-right: 40px;
+}
+
+.set:last-child .singleImage:first-child {
+  margin-left: 40px;
+}

@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import { motion } from "framer-motion";
 import ProjectItemLeft from "../components/Project/ProjectItemLeft";
 import ProjectItemRight from "../components/Project/ProjectItemRight";
@@ -27,9 +27,9 @@ const ProjectPage = () => {
         </h1>
         <br />
         <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 3 }}
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 3, ease: "easeOut" }}
         >
           <Banner />
         </motion.div>

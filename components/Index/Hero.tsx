@@ -6,7 +6,12 @@ import profilePicture from "../../images/profile-picture.png";
 
 export default function Hero() {
   const [text, count] = useTypewriter({
-    words: ["an entrepreneur", "a developer", "a food lover"],
+    words: [
+      "an entrepreneur",
+      "a software developer",
+      "a problem-solver",
+      "a food lover",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
