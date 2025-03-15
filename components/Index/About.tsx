@@ -34,7 +34,7 @@ export default function About() {
         ></iframe>
       </motion.div>
 
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-10 px-0 md:px-10 mt-[-10rem] md:mt-0">
         <h4 className="text-4xl font-semibold">
           Here&apos;s a{" "}
           <span className="underline decoration-[#8185E1]/50">little</span>{" "}

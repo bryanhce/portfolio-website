@@ -10,16 +10,19 @@ const careerHistory: ResumeContent[] = [
   {
     title: "ShopBack, Backend Engineer Intern",
     titleLink: "https://www.shopback.sg/",
+    desc: "Cashback & Cashout Team",
     date: "Jan 2025 - March 2025",
   },
   {
     title: "GovTech, Software Engineer Intern",
     titleLink: "https://www.tech.gov.sg/",
+    desc: "Build on BOB Team",
     date: "Aug 2024 - Jan 2025",
   },
   {
     title: "MSD, Cloud Engineer Intern",
     titleLink: "https://www.msd-singapore.com/",
+    desc: "Cloud FinOps Team",
     date: "Jan 2024 - Aug 2024",
   },
   {
@@ -36,6 +39,7 @@ const careerHistory: ResumeContent[] = [
   {
     title: "OCBC Bank, Data Analyst Intern",
     titleLink: "https://www.ocbc.com/group/gateway.page",
+    desc: "Group Human Resource: Human Analytics Team",
     date: "May 2022 - Aug 2022",
   },
   {
