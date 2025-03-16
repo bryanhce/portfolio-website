@@ -25,7 +25,7 @@ function Projects() {
         </div>
         <h4 className="text-4xl font-semibold">
           Building has always been a{" "}
-          <span className="underline decoration-[#8185E1]/50">passion</span>{" "}
+          <span className="underline decoration-[#8185E1]/50">passion</span> of
           mine
         </h4>
         <div className="lg:w-10/12">

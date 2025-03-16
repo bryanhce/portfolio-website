@@ -18,7 +18,7 @@ const ProjectItemRight = ({ content }: Props) => {
           <span className="font-bold text-[#fa8dc7]">Areas of growth: </span>
           {content.learningAreas}
         </Text>
-        <div className="text-left">
+        <div className="text-left flex gap-x-5">
           {content.githubLink && (
             <PurpleButton
               text="Github"

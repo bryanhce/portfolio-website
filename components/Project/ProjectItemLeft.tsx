@@ -26,7 +26,7 @@ const ProjectItemLeft = ({ content }: Props) => {
           <span className="font-bold text-[#969bfa]">Areas of growth: </span>
           {content.learningAreas}
         </Text>{" "}
-        <div className="text-right">
+        <div className="text-right flex gap-x-5">
           {content.githubLink && (
             <PurpleButton
               text="Github"

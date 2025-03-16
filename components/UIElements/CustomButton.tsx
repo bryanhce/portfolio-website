@@ -27,7 +27,7 @@ const CustomButton = ({
       rel={isOpenNewTab ? "noopener noreferrer" : undefined}
       className={`
         ${variantStyles[variant]}
-        inline-block shadow-lg py-3 px-5 mr-5 rounded-md 
+        inline-block shadow-lg py-3 px-5 rounded-md 
         text-black font-bold text-lg 
         transition-colors duration-500
         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700
