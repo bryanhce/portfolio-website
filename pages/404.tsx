@@ -28,7 +28,7 @@ scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8185E1]"
           Feel free to click on the navigation bar at the top to find your way!
         </h3>
       </div>
-      <Footer />
+      <Footer isVisibleOnMobile={false} />
     </div>
   );
 };

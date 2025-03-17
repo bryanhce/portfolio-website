@@ -33,7 +33,7 @@ const ResumePage = () => {
         <Section content={leadership} title={"Leadership Experiences"} />
         <Section content={volunteering} title={"Volunteering Experiences"} />
       </div>
-      <Footer />
+      <Footer isVisibleOnMobile={false} />
     </div>
   );
 };
