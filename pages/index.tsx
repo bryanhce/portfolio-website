@@ -30,7 +30,7 @@ export default function Home() {
         <ContactMe isFormal={true} />
       </section>
 
-      <Footer />
+      <Footer isVisibleOnMobile={false} />
     </div>
   );
 }

@@ -83,7 +83,7 @@ function ContactMe({ isFormal }: ContactMeProps) {
         Connect
       </h3>
 
-      <div className="flex flex-col space-y-12">
+      <div className="flex flex-col space-y-1 md:space-y-12">
         <h4 className="text-4xl font-semibold md:text-center mb-[60px] md:mt-16">
           <span className="decoration-[#8185E1]/50 underline">
             Let&apos;s chat!
