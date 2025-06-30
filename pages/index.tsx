@@ -6,6 +6,13 @@ import Projects from "../components/Index/Projects";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  console.log("\x1b[30m\x1b[41m%s\x1b[0m", "Snooping around the code I see!"); //red bg, black text
+  console.log(
+    "\x1b[30m\x1b[42m%s\x1b[0m",
+    "Feel free to checkout the code on my github",
+  ); //green bg, black text
+  console.log("\x1b[44m%s\x1b[0m", "It's a public repo 🥳"); //blue bg, white text
+
   return (
     <div
       className="bg-gray-700 text-white h-screen 

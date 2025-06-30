@@ -95,7 +95,7 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
             <HeaderButton text={projectText} />
           </Link>
           <Link href="/#about">
-            <HeaderButton text={projectText} />
+            <HeaderButton text={aboutText} />
           </Link>
           <Link href="/ResumePage">
             <HeaderButton text={resumeText} />

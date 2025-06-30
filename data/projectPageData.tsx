@@ -14,6 +14,7 @@ import storyGenImage from "../images/storyGenerator.png";
 import effBiImage from "../images/Eff-BI-Logo.png";
 import speakEasyImage from "../images/SpeakEasy.png";
 import t4Image from "../images/tic-tac-toe-tum-gameplay.png";
+import sgRadioImage from "../images/sg-radio.png"
 
 interface projectData {
   title: string;
@@ -59,6 +60,15 @@ export const contents: projectData[] = [
     githubLink: "https://github.com/bryanhce/reddit-videos",
     demoLink: "https://www.youtube.com/@RubiSlices",
     image: rubiSlicesImage,
+  },
+  {
+    title: "SG Radio",
+    desc: "SG Radio is a lightweight VS code extension that streams Singapore Radio stations right in your code editor! Back in the early 2000s growing up in Singapore, there was no Spotify yet. When I was studying for big exams like the PSLE and O-Levels, I would always have the radio on in the background. I made this extension to bring back those vibes! Just a fun way to relive the good old days.",
+    learningAreas:
+      "How to build a VS Code extension",
+    githubLink: "https://github.com/bryanhce/sg-radio-vscode-extension",
+    demoLink: "",
+    image: sgRadioImage,
   },
   {
     title: "STRIKER",

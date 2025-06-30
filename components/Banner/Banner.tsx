@@ -8,6 +8,7 @@ import strikerImage from "../../images/striker-icon.jpeg";
 import effBiImage from "../../images/Eff-BI-Logo.png";
 import quzzifyImage from "../../images/quizzify_logo.png";
 import speakEasyImage from "../../images/SpeakEasy.png";
+import sgRadioImage from "../../images/sg-radio.png"
 import styles from "./styles.module.css";
 
 type ImageBannerProps = {
@@ -25,6 +26,7 @@ const Banner = () => {
     effBiImage,
     quzzifyImage,
     speakEasyImage,
+    sgRadioImage,
   ].map((image, id) => ({
     id,
     image,

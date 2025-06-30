@@ -8,6 +8,17 @@ export type ResumeContent = {
 
 const careerHistory: ResumeContent[] = [
   {
+    title: "Autodesk, Software Engineer Intern",
+    titleLink: "https://www.autodesk.com/sg",
+    date: "Aug 2025 - Dec 2025",
+  },
+  {
+    title: "Workato, Software Engineer Intern",
+    titleLink: "https://www.workato.com/",
+    desc: "UI Team",
+    date: "April 2025 - July 2025",
+  },
+  {
     title: "ShopBack, Backend Engineer Intern",
     titleLink: "https://www.shopback.sg/",
     desc: "Cashback & Cashout Team",
@@ -28,6 +39,7 @@ const careerHistory: ResumeContent[] = [
   {
     title: "Factorem, Full Stack Engineer Intern",
     titleLink: "https://www.factorem.co/",
+    desc: "Product Team",
     date: "May 2023 - Aug 2023",
   },
   {
