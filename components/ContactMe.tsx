@@ -10,6 +10,7 @@ type Inputs = {
 
 type ContactMeProps = {
   isFormal?: boolean;
+  showConnectHeader?: boolean;
 };
 
 const contactInputStyle =
@@ -17,7 +18,7 @@ const contactInputStyle =
   placeholder-gray-500 transition-all focus:border-[#8185E1] \
   focus:text-[#8185E1] hover:border-[#8185E1] w-full";
 
-function ContactMe({ isFormal }: ContactMeProps) {
+function ContactMe({ isFormal, showConnectHeader = true }: ContactMeProps) {
   const { register, handleSubmit } = useForm<Inputs>();
   const toast = useToast();
 
@@ -79,9 +80,11 @@ function ContactMe({ isFormal }: ContactMeProps) {
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row
     max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-300 text-2xl pl-2 hidden md:inline-flex">
-        Connect
-      </h3>
+      {showConnectHeader && (
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-300 text-2xl pl-2 hidden md:inline-flex">
+          Connect
+        </h3>
+      )}
 
       <div className="flex flex-col space-y-1 md:space-y-12">
         <h4 className="text-4xl font-semibold md:text-center mb-[60px] md:mt-16">

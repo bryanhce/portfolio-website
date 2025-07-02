@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PurpleButton from "../UIElements/PurpleButton";
 
 export default function About() {
   return (
@@ -60,6 +61,7 @@ export default function About() {
           </span>
           that changes the world.
         </p>
+        <PurpleButton text="More About Me" href="/AboutPage" />
       </div>
     </motion.div>
   );

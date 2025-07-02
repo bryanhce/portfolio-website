@@ -39,7 +39,7 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
       <Link href="/ProjectPage" onClick={() => setIsMobileMenuOpen(false)}>
         <HeaderButton text={projectText} fontSize="text-lg" />
       </Link>
-      <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)}>
+      <Link href="/AboutPage" onClick={() => setIsMobileMenuOpen(false)}>
         <HeaderButton text={aboutText} fontSize="text-lg" />
       </Link>
       <Link href="/ResumePage" onClick={() => setIsMobileMenuOpen(false)}>
@@ -94,7 +94,7 @@ export default function Header({ isHeaderSticky }: HeaderProps) {
           <Link href="/ProjectPage">
             <HeaderButton text={projectText} />
           </Link>
-          <Link href="/#about">
+          <Link href="/AboutPage">
             <HeaderButton text={aboutText} />
           </Link>
           <Link href="/ResumePage">
