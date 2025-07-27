@@ -32,6 +32,7 @@ export default function About() {
           width="100%"
           height="100%"
           className="hidden md:inline"
+          title="spline design of me"
         ></iframe>
       </motion.div>
 

@@ -8,8 +8,8 @@ export type ResumeContent = {
 
 const careerHistory: ResumeContent[] = [
   {
-    title: "Autodesk, Software Engineer Intern",
-    titleLink: "https://www.autodesk.com/sg",
+    title: "PayPal, Software Engineer Intern",
+    titleLink: "https://www.paypal.com/",
     date: "Aug 2025 - Dec 2025",
   },
   {
