@@ -10,6 +10,7 @@ const careerHistory: ResumeContent[] = [
   {
     title: "PayPal, Software Engineer Intern",
     titleLink: "https://www.paypal.com/",
+    desc: "PayPal World Team",
     date: "Aug 2025 - Dec 2025",
   },
   {
