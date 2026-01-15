@@ -9,6 +9,8 @@ import effBiImage from "../../images/Eff-BI-Logo.png";
 import quzzifyImage from "../../images/quizzify_logo.png";
 import speakEasyImage from "../../images/SpeakEasy.png";
 import sgRadioImage from "../../images/sg-radio.png"
+import slackBotImage from "../../images/slack-birthday-bot.png";
+import galleryImage from "../../images/3d-gallery.png";
 import styles from "./styles.module.css";
 
 type ImageBannerProps = {
@@ -27,6 +29,8 @@ const Banner = () => {
     quzzifyImage,
     speakEasyImage,
     sgRadioImage,
+    slackBotImage,
+    galleryImage,
   ].map((image, id) => ({
     id,
     image,

@@ -15,6 +15,8 @@ import effBiImage from "../images/Eff-BI-Logo.png";
 import speakEasyImage from "../images/SpeakEasy.png";
 import t4Image from "../images/tic-tac-toe-tum-gameplay.png";
 import sgRadioImage from "../images/sg-radio.png"
+import slackBotImage from "../images/slack-birthday-bot.png";
+import galleryImage from "../images/3d-gallery.png";
 
 interface projectData {
   title: string;
@@ -69,6 +71,24 @@ export const contents: projectData[] = [
     githubLink: "https://github.com/bryanhce/sg-radio-vscode-extension",
     demoLink: "",
     image: sgRadioImage,
+  },
+  {
+    title: "Slack Birthday Bot",
+    desc: "I previously relied on TimeTree to track birthdays, but I grew frustrated with increasing ads and unreliable notification delivery. To ensure I never missed a celebration, I engineered my own dedicated Slack bot. This custom solution provides a distraction-free, 100% reliable notification system tailored exactly to my needs.",
+    learningAreas:
+      "Serverless cloud architecture using serverless framework and slack API integrations",
+    githubLink: "https://github.com/bryanhce/slack-birthday-bot",
+    demoLink: "",
+    image: slackBotImage,
+  },
+  {
+    title: "3D Gallery",
+    desc: "I built a fully navigable 3D space in the browser to house memories as an anniversary gift. My goal was to go from zero to deployed by leveraging Three.js for the environment and strictly using AI prompting to handle the coding architecture.",
+    learningAreas:
+      "3D Web Rendering (Three.js), 100% Vibe Coding, Nano Banana for image generation, Flow for video generation",
+    githubLink: "",
+    demoLink: "https://bnr-3d-gallery.vercel.app/",
+    image: galleryImage,
   },
   {
     title: "STRIKER",
