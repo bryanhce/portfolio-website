@@ -17,6 +17,7 @@ import t4Image from "../images/tic-tac-toe-tum-gameplay.png";
 import sgRadioImage from "../images/sg-radio.png"
 import slackBotImage from "../images/slack-birthday-bot.png";
 import galleryImage from "../images/3d-gallery.png";
+import excuseDieImage from "../images/excuse-cube.png";
 
 interface projectData {
   title: string;
@@ -80,6 +81,14 @@ export const contents: projectData[] = [
     githubLink: "https://github.com/bryanhce/slack-birthday-bot",
     demoLink: "",
     image: slackBotImage,
+  },
+    {
+    title: "Excuse Generator Die",
+    desc: "A random-access accountability-avoidance tool. Why strain your brain coming up with a reason to stay home when you can let the die do the heavy lifting for you?",
+    learningAreas: "Framer motion and animations",
+    githubLink: "https://github.com/bryanhce/excuse-die",
+    demoLink: "https://excuse-die.vercel.app/",
+    image: excuseDieImage,
   },
   {
     title: "3D Gallery",
